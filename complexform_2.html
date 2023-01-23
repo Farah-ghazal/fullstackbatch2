@@ -5,7 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework 1</title>
-     
+   <style>
+    img.a {
+  vertical-align: baseline;
+   }
+    td.class1 {
+  border-bottom: 1px solid #ddd;
+    }
+    td.class2 {
+  border-right: 1px solid #ddd;
+    }
+    td.white{
+        background-color: white;
+    }
+    body {
+  background-color: #8080801a;
+
+    }
+    .input-box{
+  width: 80px;
+}
+   </style>  
     
 </head>
 <body>
@@ -15,24 +35,24 @@
         <div>
         <tr>
             
-
-             <td colspan="3"><label for="title" width="200"length="300">Title:</label></td>
-             <td colspan="2"><label for="short title">Short Title: </label></td>
-             <td colspan="1"><label for="Subj">Subj.: </label></td>
-             <td colspan="1"><label for="Num:">Num.</label></td>
-             <td colspan="1"><label for="Section">Section:</label></td>
-             <td colspan="1"><label for="Year">Year: </label></td>
+             
+             <td colspan="3" ><b><label for="title" width="200"length="300"  >Title:</label></b></td>
+             <td colspan="2"><label for="short title"><b>Short Title: </b> </label></td>
+             <td colspan="1"><b><label for="Subj">Subj.: </label></b></td>
+             <td colspan="1"><b><label for="Num:">Num.</label></b></td>
+             <td colspan="1"><b><label for="Section">Section:</label></b></td>
+             <td colspan="1"><strong><label for="Year">Year: </label></strong></td>
 
         </tr>
         <tr>
-            <fieldset>
-            <td colspan="3"><input type="text"id="title" placeholder="Astronomy for Poets" width="100"></td>
-            <td colspan="2"><input type="text"id="short title" placeholder="Astr.for Poets" width="200"length="300"></td>
-            <td><label for="Subj" height="10"id="Subj" style="font-size:x-small">BLST</label></td>
-            <td><input type="number" placeholder="10"id="Num" style="width: 30px;"></td>
-            <td><input type="number" placeholder="01"id="Section" style="width: 30px;"></td>
-            <td><label for="0910" height="10"id="year" >0910</label></td>
-        </fieldset>
+            
+            <td class="class1" colspan="3"><input type="text"id="title" placeholder="Astronomy for Poets" width="100"></td>
+            <td class="class1" colspan="2"><input type="text"id="short title" placeholder="Astr.for Poets" width="200"length="300"></td>
+            <td class="class1" ><label for="Subj" height="10"id="Subj" style="font-size:x-small">BLST</label></td>
+            <td class="class1" ><input type="number" placeholder="10"id="Num" style="width: 30px;"></td>
+            <td class="class1" ><input type="number" placeholder="01"id="Section" style="width: 30px;"></td>
+            <td class="class1" ><label for="0910" height="10"id="year" >0910</label></td>
+        
         </tr>
         </div>
         <br>
@@ -40,14 +60,14 @@
             <td rowspan="2"><input type="checkbox" id="Enrollment limit" name="Enrollment limit" value="Enrollment limit">
             <label for="Enrollment limit" style="font-size:smaller"id="Enrollment limit" name="Enrollment limit" value="Enrollment limit">Enrollment limit</label></td>
             <pre>
-            <td colspan="1"><label for="Num:">Num.</label></td>
-            <td colspan="3"><label for="Rationable:">Rationable:</label></td>
-            <td colspan="2" rowspan="8"> 
-                <label for="meetings" id="meetings" name="meetings">Class Meetings/Week:</label><br>
+            <td colspan="1"><b><label for="Num:">Num.</label></b></td>
+            <td class="class2" colspan="3"><b><label for="Rationable:">Rationable:</label></b></td>
+            <td class="class2" colspan="2" rowspan="8"> 
+                <b><label  for="meetings" id="meetings" name="meetings">Class Meetings/Week:</label></b><br>
                 <input type="number" placeholder="1"id="meetings" style="width: 30px;"><br>
-                <label for="hours" id="hours" name="hours">Class Hours/Week:</label><br>
+                <b><label for="hours" id="hours" name="hours">Class Hours/Week:</label></b><br>
                 <input type="number" placeholder="1"id="Hours" style="width: 30px;"><br>
-                <label for="sem" id="sem" name="sem">Semester(s) Offered:</label><br>
+                <b><label for="sem" id="sem" name="sem">Semester(s) Offered:</label></b><br>
                 <select name="sems" id="sems"><br>
                     <option value="sem1">semester1</option><br>
                     <option value="sem2">semester2</option><br>
@@ -62,8 +82,8 @@
                 <label for="option3">Incl. in printed catalog</label><br>
             </pre>
             </td>
-            <td colspan="2" rowspan="8">
-                <label>Keywords:</label><br>
+            <td colspan="2" rowspan="8" class="class2">
+                <b><label>Keywords:</label></b><br>
                 <input type="checkbox" id="option1" name="option1" >
                 <label for="option1">Science for non-majors</label><br>
                 <input type="checkbox" id="option2" name="option2">
@@ -84,107 +104,113 @@
             </td>
         </tr>
         <tr>
-            <td colspan="1"><input type="number"id="Num" style="width: 30px;"></td>
-            <td colspan="3"><input type="Rationable" id="Rationable" style="width: 250px;"></td>
+            <td colspan="1"><input type="number" id="Num" style="width: 30px;"></td>
+            <td colspan="3"><input type="text" class="input-box" id="Rationable" style="width: 250px;"></td>
 
         </tr>
         <tr>
-            <td rowspan="2"><input type="checkbox" id="Consent Required" name="Consent Required" value="Consent Required">
+            <td class="class1" rowspan="2"><input type="checkbox" id="Consent Required" name="Consent Required" value="Consent Required">
             <label for="Consent Required" style="font-size:smaller"id="Consent Required" name="Consent Required" value="Consent Required">Consent Required</label></td>
-            <td colspan="1"> </td>
-            <td colspan="3"><label for="Rationable:">Rationable:</label></td>
+            <td colspan="1" class="class2"> </td>
+            <td colspan="3" class="class2"><b><label for="Rationable:">Rationable:</label></b></td>
         </tr>
         <tr>
-            <td colspan="1"></td>
-            <td colspan="3"><input type="Rationable" id="Rationable" style="width: 250px;"></td>  
+            <td  class="class1" colspan="1"></td>
+            <td  class="class1"  class="class2" colspan="3"><input type="text" class="input-box" id="Rationable" style="width: 250px;"></td>  
         </tr>
         <tr>
-            <td rowspan="2"><input type="checkbox" id="limit class level" name="limit class level" value="limit class level">
+            <td  rowspan="2"><input type="checkbox" id="limit class level" name="limit class level" value="limit class level">
             <label for="limit class level" style="font-size:smaller"id="limit class level" name="limit class level" value="limit class level">limit class level</label></td>
-            <td colspan="1"><label for="code:">Code:</label></td>
-            <td colspan="3"><label for="Rationable:">Rationable:</label></td>
+            <td colspan="1"><b><label for="code:">Code:</label></b></td>
+            <td colspan="3" ><b><label for="Rationable:">Rationable:</label></b></td>
         </tr>
 
         <tr>
             <td colspan="1"><input type="number"id="code" style="width: 30px;"></td>
-            <td colspan="3"><input type="Rationable" id="Rationable" style="width: 250px;"></td>  
+            <td colspan="3"><input type="text" class="input-box" id="Rationable" style="width: 250px;"></td>  
         </tr>
 
         <tr>
-            <td rowspan="2"></td>
+            <td  class="class1" rowspan="2"></td>
             <td colspan="1"></td>
-            <td colspan="3"><label for="Rationable:">How To Handle over-enrollment:</label></td>
+            <td colspan="3"><b><label for="Rationable:">How To Handle over-enrollment:</label></b></td>
         </tr>
         <tr>
-            <td colspan="1"></td>
-            <td colspan="3"><input type="text" id="Rationable" style="width: 250px;"></td> 
+            <td class="class1" colspan="1"></td>
+            <td class="class1" colspan="3"><input type="text" class="input-box" id="Rationable" style="width: 250px;"></td> 
         </tr>
         <tr>
             <td rowspan="2"><input type="checkbox" id="Prerequests" name="Prerequests" value="Prerequests">
             <label for="Prerequests" style="font-size:smaller"id="Prerequests" name="Prerequests" value="Prerequests">Prerequests</label></td>
             <td colspan="1"></td>
-            <td colspan="3"><label for="Rationable:">Rationable:</label></td>
+            <td colspan="3" class="class2" ><b><label for="Rationable:">Rationable:</label></b></td>
         </tr>
         <tr>
             <td></td>
-            <td colspan="3"><input type="text" id="Rationable" style="width: 250px;"></td> 
+            <td colspan="3" class="class2" ><input type="text" class="input-box"   id="Rationable" style="width: 250px;"></td> 
         </tr>
         <tr>
             <td rowspan="2"></td>
             <td colspan="1"></td>
-            <td colspan="3"><label for="Required Prereqs.(major,course):">Required Prerequests:</label></td>
+            <td colspan="3"class="class2" ><b><label for="Required Prereqs.(major,course):">Required Prerequests:</label></b></td>
         </tr>
         <tr>
             <td></td>
-            <td colspan="3"><input type="text" id="Required Prerequests" style="width: 250px;"></td>
+            <td colspan="3" class="class2" ><input type="text" id="Required Prerequests" style="width: 250px;"></td>
         </tr>
         <tr>
-            <td rowspan="2"></td>
+            <td class="class1" rowspan="2"></td>
             <td colspan="1"></td>
-            <td colspan="3"><label for="recommended Prereqs.(major,course):">Recommeneded Prerequests:</label></td>
+            <td colspan="3" class="class2" ><b><label for="recommended Prereqs.(major,course):">Recommeneded Prerequests:</label></b></td>
         </tr>
         <tr>
-            <td></td>
-            <td colspan="3"><input type="text" id="Recommeneded Prerequests" style="width: 250px;"></td>
+            <td class="class1"></td>
+            <td class="class1 class2"  colspan="3"><input type="text" id="Recommeneded Prerequests" style="width: 250px;"></td>
         </tr>
         <tr>
-            <td><b><label for="Approvals">Approvals:</label></b></td>
-            <td colspan="2"><b><label for="Date">Date:</label></b></td>
-            <td colspan="4"><b><label for="Comments">Comments:</label></b></td>
+            <td class="white"  ><b><label for="Approvals">Approvals:</label></b></td>
+            <td  class="white"  colspan="2"><b><label for="Date">Date:</label></b></td>
+            <td class="white"   colspan="4"><b><label for="Comments">Comments:</label></b></td>
         </tr>
         <tr>
-            <td>
+            <td class="white">
             <input type="checkbox" name="option1" id="option1" >
             <label for="option1">CEP</label>
             </td>
             <td colspan="2">
+                <img class="a" src="icon_1.png" width="11" height="11">
                 <input type="text" id="date1" name="date1" >
             </td>
             <td colspan="4">
+                <img class="a" src="icon_1.png" width="11" height="11">
                 <input type="text"  id="Comments1" name="comments1"  style="width: 400px;">
             </td>
         </tr>
         <tr>
-            <td>
+            <td class="white">
             <input type="checkbox" name="option2" id="option2">
-            <label for="option1">Committee of Six</label>
+            <label for="option2">Committee of Six</label>
             </td>
             <td colspan="2">
+                <img class="a" src="icon_1.png" width="11" height="11">
                 <input type="text" id="date2" name="date2" >
             </td>
             <td colspan="4">
+                <img class="a" src="icon_1.png" width="11" height="11">
                 <input type="text"  id="Comments2" name="comments2"  style="width: 400px;">
             </td>
         </tr>
         <tr>
-            <td>
+            <td class="white">
             <input type="checkbox" name="option3" id="option3" >
-            <label for="option1">Faculty</label>
+            <label for="option3">Faculty</label>
             </td>
             <td colspan="2">
+                <img class="a" src="icon_1.png" width="11" height="11">
                 <input type="text" id="date3" name="date3" >
             </td>
             <td colspan="4">
+                <img class="a" src="icon_1.png" width="11" height="11">
                 <input type="text"  id="Comments3" name="comments3"  style="width: 400px;">
             </td>
         </tr>
