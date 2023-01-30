@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{/*this means aply these properties on all the page*/
+    margin:0;/*remove all the default lines from the browser*/
+    padding:0;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    height: 100vh;/*vh is a unit like px */
+    padding: 12px;
+    display:flex;/*l legnth tb3 l properties bikunu flexble*/
+    justify-content: center;/*btshti8il 3l main axis l box killo bseer 3l nos ; */
+    align-items: center;/*btshti8il 3l main axis l conten tb3 box killo bseer 3l nos ;*/
+    background-color: linear-gradient(130deg,#71b7e6,#9b5b69);
+}
+.container{
+    width: 100%;
+    max-width:  700px; 
+    padding: 22px 29px;
+    background-color: #fff ;
+    border-radius: 6px ;
+    box-shadow: 0 6px 11px rgba(0,0,0,0,0.13);
+}
+
+.container.title{
+    font-weight: 500  ;
+    font-size: 22px ;
+    position: relative ;
+}
+
+.content form .user-detailes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 18px 12px 0 ;
+}
+form .user-detailes .input-box{
+    width: calc(100% /2 -20px);/* hyk mn5aleyun ykunun kil 2 elemmnets 7ad b3dun
+                               and we subtract the 20px kermal ma yfoto l elements bi b3d */
+     margin-bottom: 14px ;
+
+}
+
+form .input-box span.details {
+    /*kl wi7de te5od ad ma bada*/
+    display:block;
+    font-weight: 400;
+    margin-bottom : 5px;
+
+}
+.user-detailes .input-box input /* w=y3ne kl shi input no matter its type*/
+{
+    width:100%;
+    height: 44px;
+    outline: none;
+    font-size: 14px;
+    padding-left: 17px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    border-bottom-width : 2px;
+}
+.user-detailes .input-box input:focus
+.user-detailes .input-box input:valid{
+    border-color: #9b59b6;
+}
+form .gender-detailes .gender-title{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+form .catergory {
+    display: flex;
+    justify-content:space-between ;
+    width:80%;
+    margin: 14px 0 ;
+}
+
+form .catergory label{
+    display: flex;
+    align-items: center;
+}
+
+form .catergory label .dot{
+    width: 17px;
+    height: 17px;
+    border-radius:50%;
+    margin-right: 10px;
+    background-color: #d9d9d9;
+} 
+
+#dot-1:checked ~ .catergory label .one,
+#dot-2:checked ~ .catergory label .two,
+#dot-3:checked ~ .catergory label .three{
+    background-color:  #9b59b6;
+    border-color: #d9d9d9;
+}
+
+form input[type="radio"]{
+    display: none;
+}
+
+form .button{
+    height: 45px;
+    margin:35px 0;
+
+}
+form .button input{
+height:100%;
+width:100%;
+border:none;
+border-radius: 5px;
+color: #fff;
+font-size: 20px;  
+font-weight: 500;
+letter-spacing: 1px;
+background : linear-gradient(130deg,#71b7e6,#9b5b69);
+
+}
+form .button input:hover{
+    background : linear-gradient(-130deg,#71b7e6,#9b5b69);
+}
